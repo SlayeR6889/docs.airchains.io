@@ -8,8 +8,10 @@ sidebar_position: 1
 
 If you are currently operating a full node and want to upgrade to a validator node, please proceed with the following steps.
 
-> Before starting, it's crucial to set the minimum gas price in your app configuration. Locate the app.toml file at `~/.junction/config/app.toml` and ensure you set the minimum-gas-prices to `0.00025amf` to start the node.
-> This ensures smooth operation and fair transaction processing.
+:::note
+Before starting, it's crucial to set the minimum gas price in your app configuration. Locate the app.toml file at `~/.junction/config/app.toml` and ensure you set the minimum-gas-prices to `0.00025amf` to start the node.
+This ensures smooth operation and fair transaction processing.
+:::
 
 ### 1. Check the Node Status
 
@@ -105,25 +107,5 @@ junctiond query tendermint-validator-set
 
 
 :::note
-Ensure that your system meets the necessary prerequisites for installing Go, such as having a compatible Linux distribution and sufficient user permissions. The process may slightly vary depending on the specific Linux distribution you are using.
-:::
-
-:::note
-**Note:** Ensure that your system meets the necessary prerequisites for installing Go, such as having a compatible Linux distribution and sufficient user permissions. The process may slightly vary depending on the specific Linux distribution you are using.
-:::
-
-:::info
-**Note:** Ensure that your system meets the necessary prerequisites for installing Go, such as having a compatible Linux distribution and sufficient user permissions. The process may slightly vary depending on the specific Linux distribution you are using.
-:::
-
-:::warning
-**Note:** Ensure that your system meets the necessary prerequisites for installing Go, such as having a compatible Linux distribution and sufficient user permissions. The process may slightly vary depending on the specific Linux distribution you are using.
-:::
-
-:::danger
-**Note:** Ensure that your system meets the necessary prerequisites for installing Go, such as having a compatible Linux distribution and sufficient user permissions. The process may slightly vary depending on the specific Linux distribution you are using.
-:::
-
-:::success
-**Note:** Ensure that your system meets the necessary prerequisites for installing Go, such as having a compatible Linux distribution and sufficient user permissions. The process may slightly vary depending on the specific Linux distribution you are using.
+If your address is visible, it indicates successful inclusion in the validator set. Please note that this process may take some time.
 :::
