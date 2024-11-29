@@ -64,7 +64,12 @@ Next, the prover P, utilizing the proving key pk, public input x, and a secret w
 
 Finally, the verifier V checks the validity of the proof by executing V(vk, w.pub(), prf), which confirms the truth of the claim if the proof prf is valid.
 
-![zk-SNARK](https://docs.airchains.io/~gitbook/image?url=https%3A%2F%2F123555353-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FSJC99oYNkNjVi7CHXhGM%252Fuploads%252FJWh2ibAlq5nJn7pM1e1E%252FGroup%25202%2520%281%29.png%3Falt%3Dmedia%26token%3Def00ad22-4e85-4c53-bd8f-634de8ad29ba&width=768&dpr=4&quality=100&sign=6a299871&sv=1)
+<img src="/img/proof.png" alt="Overview" style={{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+
+}}/>
 
 ## Circuit
 

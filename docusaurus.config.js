@@ -58,15 +58,7 @@ const config = {
           alt: "Documentation Logo",
           src: "img/logo.png",
         },
-        // items: [
-        //   {
-        //     href: "https://github.com/facebook/docusaurus",
-        //     label: "GitHub",
-        //     position: "right",
-        //   },
-        // ],
       },
-      footer: {},
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
