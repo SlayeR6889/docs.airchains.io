@@ -1,41 +1,47 @@
-# Website
+# Airchains Documentation
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This is the documentation for the Airchains project. The documentation is written in markdown and is hosted on vercel.
 
-### Installation
+You can contribute to the documentation by making a pull request to the [Airchains Documentation Repository](https://github.com/SlayeR6889/docs.airchains.io)
 
-```
-$ yarn
-```
+## Contributing
 
-### Local Development
+To contribute to the documentation, you need to have a basic understanding of markdown. If you are not familiar with markdown, you can learn more about it [here](https://www.markdownguide.org/).
 
-```
-$ yarn start
-```
+To contribute to the documentation, follow these steps:
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+1. Clone the repository
 
-### Build
-
-```
-$ yarn build
+```bash
+git clone https://github.com/SlayeR6889/docs.airchains.io
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+2. Create a new branch
 
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```bash
+git checkout -b <branch-name>
 ```
 
-Not using SSH:
+3. Make your changes
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+4. Commit your changes
+
+```bash
+git commit -m "Your commit message" -m "Your commit description"
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Note : The commit message should be descriptive and should explain the changes you made.
+
+5. Push your changes
+
+```bash
+git push origin <branch-name>
+```
+
+6. Create a pull request
+
+7. Wait for your pull request to be reviewed and merged
+
+8. Celebrate 🎉
+
+
