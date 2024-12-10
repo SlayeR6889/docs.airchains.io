@@ -53,9 +53,9 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       algolia: {
-        appId: "P9COXFKI3G", // Replace with your Algolia app ID
-        apiKey: "843bd240189959a54f97621062536663", // Replace with your Algolia search-only API key
-        indexName: "airchains", // Replace with the name of your Algolia index
+        appId: "65MIXQFSQ1", // Replace with your Algolia app ID
+        apiKey: "1f3f15969cecebe9e687445549b9e021", // Replace with your Algolia search-only API key
+        indexName: "airchains-io", // Replace with the name of your Algolia index
         contextualSearch: true, // Optional: Enables contextual search
         searchParameters: {}, // Optional: Add search parameters if needed
       },
@@ -77,9 +77,7 @@ const config = {
       },
     }),
 
-  plugins: [
-   
-  ],
+  plugins: [],
 };
 
 export default config;
