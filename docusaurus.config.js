@@ -52,6 +52,13 @@ const config = {
     ({
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
+      algolia: {
+        appId: "P9COXFKI3G", // Replace with your Algolia app ID
+        apiKey: "843bd240189959a54f97621062536663", // Replace with your Algolia search-only API key
+        indexName: "airchains", // Replace with the name of your Algolia index
+        contextualSearch: true, // Optional: Enables contextual search
+        searchParameters: {}, // Optional: Add search parameters if needed
+      },
       navbar: {
         title: "Documentation",
         logo: {
@@ -71,28 +78,7 @@ const config = {
     }),
 
   plugins: [
-    [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
-      {
-        indexDocs: true, // Index documentation pages
-        indexDocSidebarParentCategories: 0, // Do not index parent categories in the sidebar
-        includeParentCategoriesInPageTitle: false, // Do not include parent categories in the search result title
-        indexBlog: false, // Disable blog indexing since the blog is disabled
-        indexPages: false, // Do not index static pages
-        language: "en", // Set the language to English
-        style: undefined, // Use the default CSS
-        maxSearchResults: 3, // Limit the number of search results displayed
-        lunr: {
-          tokenizerSeparator: /[\s\-]+/, // Custom tokenizer for splitting text
-          b: 0.75, // Document length penalty
-          k1: 1.2, // Saturation threshold for common words
-          titleBoost: 5, // Boost for matches in the title
-          contentBoost: 1, // Boost for matches in the content
-          tagsBoost: 3, // Boost for matches in the tags
-          parentCategoriesBoost: 2, // Boost for parent category matches
-        },
-      },
-    ],
+   
   ],
 };
 

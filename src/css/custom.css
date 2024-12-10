@@ -23,3 +23,17 @@ nav .DocSearch-Button-Placeholder {
 .DocSearch-Modal a {
   color: #00bfa5;
 }
+
+.sidebar-heading {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 36px 0px 16px 12px;
+}
+
+.custom-sidebar-item {
+  font-size: 14px;
+  font-weight: 400;
+  color: #d40c0c;
+}
