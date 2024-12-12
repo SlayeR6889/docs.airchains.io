@@ -24,7 +24,9 @@ This outlines the necessary hardware specifications for establishing an Airsettl
 
 <br/>
 
-> While there's no specific preference for an operating system, it's advisable to opt for more secure and stable Linux server distributions, such as Ubuntu, rather than desktop operating systems like macOS or Windows. Furthermore, as the network expands, the minimum storage needs will evolve. To ensure a stable operation of a full node, it's recommended to exceed these minimum requirements.
+:::note
+While there's no specific preference for an operating system, it's advisable to opt for more secure and stable Linux server distributions, such as Ubuntu, rather than desktop operating systems like macOS or Windows. Furthermore, as the network expands, the minimum storage needs will evolve. To ensure a stable operation of a full node, it's recommended to exceed these minimum requirements.
+:::
 
 ### Prerequisites & Installation
 
@@ -39,7 +41,9 @@ Our node setup manuals are crafted specifically for Linux distributions with apt
 
 Begin by downloading the appropriate Ignite CLI source files from GitHub. Since we are using an AMD processor on a Linux system, use the following wget command:
 
-> To correctly set up Ignite for your system, it's important to select the appropriate binary file tailored to your system's specifications. Please use this link Ignite CLI v0.27.1 for the download. We strongly recommend using [Ignite version v0.27.1](https://github.com/ignite/cli/releases/tag/v0.27.1), as other versions might not be compatible with Airsettle.
+:::warning
+To correctly set up Ignite for your system, it's important to select the appropriate binary file tailored to your system's specifications. Please use this link Ignite CLI v0.27.1 for the download. We strongly recommend using [Ignite version v0.27.1](https://github.com/ignite/cli/releases/tag/v0.27.1), as other versions might not be compatible with Airsettle.
+:::
 
 ```bash
 wget https://github.com/ignite/cli/releases/download/v0.27.1/ignite_0.27.1_linux_amd64.tar.gz
@@ -121,7 +125,9 @@ To verify that Go is installed correctly, open a new terminal and run:
 go version
 ```
 
-> **Note** : Ensure that your system meets the necessary prerequisites for installing Go, such as having a compatible Linux distribution and sufficient user permissions. The process may slightly vary depending on the specific Linux distribution you are using.
+:::note
+**Note** : Ensure that your system meets the necessary prerequisites for installing Go, such as having a compatible Linux distribution and sufficient user permissions. The process may slightly vary depending on the specific Linux distribution you are using.
+:::
 
 ## Port Configuration
 
@@ -144,4 +150,7 @@ To ensure smooth operation, the system requires specific ports to be configured.
    - This port is designated for the Faucet service, which is typically used in devnet & testnets to provide test tokens for users.
 
 <br />
-> Ensure that these ports are correctly configured and open on your system to enable the intended functionalities and communication protocols. This setup is key to maintaining efficient and uninterrupted network operations.
+
+:::note
+Ensure that these ports are correctly configured and open on your system to enable the intended functionalities and communication protocols. This setup is key to maintaining efficient and uninterrupted network operations.
+:::

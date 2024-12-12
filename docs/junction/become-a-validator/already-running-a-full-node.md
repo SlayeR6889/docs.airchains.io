@@ -21,7 +21,9 @@ Run the Command to check the status of the Node.
 junctiond status
 ```
 
-> Should the 'catching_up' field return 'true', it's important to wait until the Node completes its synchronization. Do not proceed with further steps until this process is finished.
+:::warning
+Should the 'catching_up' field return 'true', it's important to wait until the Node completes its synchronization. Do not proceed with further steps until this process is finished.
+:::
 
 ### 2. Create New Account for the Validator
 
@@ -29,7 +31,9 @@ junctiond status
 junctiond keys add <validator_name>
 ```
 
-> This command will generate your wallet's `mnemonic` and `address`. It's crucial to write these down and store them securely.
+:::tip
+This command will generate your wallet's `mnemonic` and `address`. It's crucial to write these down and store them securely.
+:::
 
 ### 3. Fund you Account
 
@@ -53,7 +57,9 @@ The output will be something like this:
 
 You'll need to paste the pubkey value into the pubkey section of the JSON file.
 
-> Please adjust the staking amount and other keys as you see fit.
+:::note
+Please adjust the staking amount and other keys as you see fit.
+:::
 
 ```JSON
 {
@@ -75,7 +81,9 @@ You'll need to paste the pubkey value into the pubkey section of the JSON file.
 junctiond tx staking create-validator path/to/validator.json --from <key-name> --chain-id junction --fees 500amf
 ```
 
-> A prompt will appear in the CLI. To proceed, type 'y' and press enter.
+:::note
+A prompt will appear in the CLI. To proceed, type 'y' and press enter.
+:::
 
 It will return Transaction hash Like this
 
@@ -102,9 +110,6 @@ To See if you were accepted as a validator,
 ```bash
 junctiond query tendermint-validator-set
 ```
-
-> If your address is visible, it indicates successful inclusion in the validator set. Please note that this process may take some time.
-
 
 :::note
 If your address is visible, it indicates successful inclusion in the validator set. Please note that this process may take some time.

@@ -7,12 +7,14 @@ sidebar_position: 5
 
 # Sequencers
 
-> The Airchains Sequencer is in its early development stages. This documentation is intended for rollup developers interested in early integration. Please note:
->
-> - The documentation may not be complete.
-> - The sequencer is not yet production-ready.
->
-> We welcome your pioneering spirit and appreciate your understanding as we continually improve our platform.
+:::warning
+The Airchains Sequencer is in its early development stages. This documentation is intended for rollup developers interested in early integration. Please note:
+
+- The documentation may not be complete.
+- The sequencer is not yet production-ready.
+
+We welcome your pioneering spirit and appreciate your understanding as we continually improve our platform.
+:::
 
 <br/>
 Rollups, an integral part of the Airchains platform, interact seamlessly with the Airchains Sequencer. This interaction is crucial for the transaction process flow. Here's how it works:
@@ -75,7 +77,7 @@ Utilizing this extracted data, the Aggregator then methodically compiles transac
        justifyContent: 'center',
        alignItems: 'center',
    }}/>
-   <br/>
+<br/>
 
 ## Prover
 
@@ -111,4 +113,8 @@ Following the settlement of the batch, the blockchain system engages in a compre
 
 The ongoing cycle of these processes - the sequencer's interaction with the DA layer, the receipt of the DA check, the integration into the settlement layer, and the final verification - is integral to the blockchain's functionality. It ensures not only the efficiency and accuracy of transaction processing but also upholds the principles of security and transparency that are central to blockchain technology. Each step in this cycle, meticulously carried out by the various components of the blockchain, contributes to the robustness and reliability of the entire network.
 
-![TRANSACTIONAL-VERIFICATION](https://docs.airchains.io/~gitbook/image?url=https%3A%2F%2F123555353-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FSJC99oYNkNjVi7CHXhGM%252Fuploads%252F8M22q3HJEnhq0QcJvQWZ%252FGroup%2520427319218%2520%281%29.png%3Falt%3Dmedia%26token%3Df08821c0-e9a3-4746-84e6-4625b4c14e8b&width=768&dpr=4&quality=100&sign=2ca95a6c&sv=1)
+<img src="/img/transaction-verification.png" alt="Overview" style={{
+       display: 'flex',
+       justifyContent: 'center',
+       alignItems: 'center',
+   }}/>

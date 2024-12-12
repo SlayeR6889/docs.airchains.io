@@ -37,3 +37,16 @@ nav .DocSearch-Button-Placeholder {
   font-weight: 400;
   color: #d40c0c;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+th, td {
+    width: 50%;
+    background: #29292994;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
