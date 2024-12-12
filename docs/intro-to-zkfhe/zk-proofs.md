@@ -58,11 +58,11 @@ When the requirement for succinctness is set aside, and zero-knowledge is adjust
 
 ## Definition of a zk-SNARK
 
-A zk-SNARK involves three core components: a key generator (G), a prover (P), and a verifier (V). The process begins with G, which, using a secret parameter lambda and a specific program C, outputs a pair of keys: a proving key (pk) and a verification key (vk). These keys, once generated, are public and tied to the program C.
+A zk-SNARK involves three core components: a key generator (`G`), a prover (`P`), and a verifier (`V`). The process begins with `G`, which, using a secret parameter lambda and a specific program `C`, outputs a pair of keys: a proving key (`pk`) and a verification key (`vk`). These keys, once generated, are public and tied to the program `C`.
 
-Next, the prover P, utilizing the proving key pk, public input x, and a secret witness w, produces a proof prf that they know a witness w which conforms to the constraints of program C.
+Next, the prover `P`, utilizing the proving key `pk`, public input `x`, and a secret witness `w`, produces a proof `prf` that they know a witness `w` which conforms to the constraints of program `C`.
 
-Finally, the verifier V checks the validity of the proof by executing V(vk, w.pub(), prf), which confirms the truth of the claim if the proof prf is valid.
+Finally, the verifier `V` checks the validity of the proof by executing `V(vk, w.pub(), prf)`, which confirms the truth of the claim if the proof prf is valid.
 
 <img src="/img/proof.png" alt="Overview" style={{
     display: 'flex',
